@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative 'FizzBuzz'
+require_relative 'fizzbuzz'
 
 
 class FizzBuzzTest < Test::Unit::TestCase
