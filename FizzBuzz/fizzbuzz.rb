@@ -12,4 +12,12 @@ class FizzBuzz
             return number
         end
     end
+
+    def getList(max)
+        result = Array.new()
+        for i in 1..max
+            result.push(get(i))
+        end
+        return result
+    end
 end

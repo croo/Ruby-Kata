@@ -31,5 +31,11 @@ class FizzBuzzTest < Test::Unit::TestCase
         assert_equal("fizzbuzz", fizzBuzz.get(15))
         assert_equal("fizzbuzz", fizzBuzz.get(30))
     end
+
+    def test_print_everything_until_max
+        fizzBuzz = FizzBuzz.new
+        expected = [1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz"]
+        assert_equal(expected,fizzBuzz.getList(15))
+    end
 end
 
