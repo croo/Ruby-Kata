@@ -32,7 +32,7 @@ class StringCalcTest < Test::Unit::TestCase
         assert_equal(45,@stringCalc.add("\\#\n10#10\n10#3#10#2"))
     end
 
-#    def test_should_support_multiple_custom_delimiter
-#        assert_equal(45,@stringCalc.add("\\#&-_\n10_10\n10&3#10-2"))
-#    end
+    def test_should_support_multiple_custom_delimiter
+        assert_equal(45,@stringCalc.add("\\#&@_\n10_10\n10&3#10@2"))
+    end
 end
