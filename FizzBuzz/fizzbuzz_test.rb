@@ -4,7 +4,9 @@ require_relative 'fizzbuzz'
 
 class FizzBuzzTest < Test::Unit::TestCase
 
-    @fizzBuzz = FizzBuzz.new
+    def setup
+        @fizzBuzz = FizzBuzz.new
+    end
 
     def test_class_and_function_exists
         assert_equal(1, @fizzBuzz.get(1))
