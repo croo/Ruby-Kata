@@ -11,9 +11,7 @@ class StringCalc
             numbers = string.split(/[#{delimiter}\n]/)
         end
 
-        result = 0
-        numbers.each { |number| result += number.to_i }
-        return result
+        return numbers.map(&:to_i).reduce(0,:+)
     end
 
 end
